@@ -1,0 +1,13 @@
+{
+  "assetBundleAddress": "testbundle",
+  "items": [
+    {
+      "id": 0,
+      "name": "chair",
+      "assetName": "BundledSpriteObject",
+      "iconName": "BundledSpriteObject",
+      "description": "This is a description",
+      "price": 2000
+    }
+  ]
+}
