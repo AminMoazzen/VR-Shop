@@ -2,7 +2,7 @@ using System.Collections;
 using System.IO;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Local Shop", menuName = "Shop / Local Shop")]
+[CreateAssetMenu(fileName = "New Local Shop", menuName = "VR Shop / Local Shop")]
 public class ShopLocal : Shop
 {
     [SerializeField] private string jsonFile;

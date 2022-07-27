@@ -1,10 +1,17 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
 public class InventoryData
 {
     public int Wallet;
-    public ShopItemData[] items;
+    public List<ShopItemData> items;
+
+    public InventoryData()
+    {
+        Wallet = 0;
+        items = new List<ShopItemData>();
+    }
 
     public InventoryData(string json)
     {
@@ -13,7 +20,7 @@ public class InventoryData
         items = data.items;
     }
 
-    public InventoryData(int Wallet, ShopItemData[] items)
+    public InventoryData(int Wallet, List<ShopItemData> items)
     {
         this.Wallet = Wallet;
         this.items = items;
