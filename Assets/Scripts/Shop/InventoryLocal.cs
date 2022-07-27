@@ -5,8 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Local Inventory", menuName = "VR Shop / Local Inventory")]
 public class InventoryLocal : Inventory
 {
-    [SerializeField] private string jsonFile;
-
     public override IEnumerator Fetch()
     {
         var inventoryJsonFile = GetSavePath();
@@ -33,6 +31,7 @@ public class InventoryLocal : Inventory
     {
         data.Wallet += amount;
         SaveToFile();
+        onWalletChanged.Invoke(data.Wallet);
     }
 
     public override bool PurchaseItem(ShopItemData item)
@@ -44,12 +43,14 @@ public class InventoryLocal : Inventory
         data.items.Add(item);
         SaveToFile();
 
+        onWalletChanged.Invoke(data.Wallet);
+
         return true;
     }
 
     public override bool HasItem(ShopItemData item)
     {
-        return data.items.Contains(item);
+        return data.items.Find((x) => x.id == item.id) != null;
     }
 
     private void SaveToFile()

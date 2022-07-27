@@ -1,9 +1,11 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class Inventory : ScriptableObject
 {
     public InventoryData data;
+    public UnityEvent<int> onWalletChanged;
 
     public abstract IEnumerator Fetch();
 

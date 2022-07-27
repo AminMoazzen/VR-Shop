@@ -1,26 +1,25 @@
-using UnityEngine;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class ShopData
 {
-    public string assetBundleAddress;
-    public ShopItemData[] items;
+    public List<ShopItemData> items;
+
+    [JsonConstructor]
+    public ShopData(List<ShopItemData> items)
+    {
+        this.items = items;
+    }
 
     public ShopData(string json)
     {
-        var data = JsonUtility.FromJson<ShopData>(json);
-        assetBundleAddress = data.assetBundleAddress;
+        var data = JsonConvert.DeserializeObject<ShopData>(json);
         items = data.items;
-    }
-
-    public ShopData(string assetBundleAddress, ShopItemData[] items)
-    {
-        this.assetBundleAddress = assetBundleAddress;
-        this.items = items;
     }
 
     public string Serialize()
     {
-        return JsonUtility.ToJson(this);
+        return JsonConvert.SerializeObject(this);
     }
 }

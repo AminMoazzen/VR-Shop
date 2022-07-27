@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d49df40bc0af7554880465a26f28201e
+  m_SerializeEntries:
+  - m_GUID: a27c43cb0ca50ac479843807dd98b9e6
+    m_Address: Assets/Sprites/New Sprite Atlas.spriteatlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1bc3fde8725a45c41b344ac33d3eece4
+    m_Address: Assets/Prefabs/Object-AnchorAtHand.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 6a810fd14c1d44d4892fa6989bd075e6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 61fa2e8436096e84ea184976d9038e2d, type: 2}
+    - {fileID: 11400000, guid: 4188ffc8146ec8244a5f4faa379110a0, type: 2}

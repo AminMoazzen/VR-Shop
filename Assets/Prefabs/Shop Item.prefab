@@ -581,7 +581,8 @@ MonoBehaviour:
   thumbnail: {fileID: 3918414113322843400}
   itemName: {fileID: 3918414113409305989}
   priceTag: {fileID: 3918414113713984466}
-  descriptions: {fileID: 8185561381657714566}
+  metadataGameObject: {fileID: 8185561381657714566}
+  metadata: {fileID: 4790102999745518092}
   buyButton: {fileID: 1758869086944277785}
   checkMark: {fileID: 7496028415663152335}
 --- !u!1 &7134185663308113021
@@ -751,7 +752,7 @@ GameObject:
   - component: {fileID: 6443284077997605589}
   - component: {fileID: 4790102999745518092}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Metadata Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -805,7 +806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Some Description
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -832,8 +833,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -848,7 +849,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -1021,7 +1022,7 @@ GameObject:
   - component: {fileID: 1584245203053396616}
   - component: {fileID: 8696458275883177413}
   m_Layer: 5
-  m_Name: Description
+  m_Name: Metadata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

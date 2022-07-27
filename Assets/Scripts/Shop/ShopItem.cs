@@ -1,7 +1,8 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
@@ -10,34 +11,45 @@ public class ShopItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] private Image thumbnail;
     [SerializeField] private TextMeshProUGUI itemName;
     [SerializeField] private TextMeshProUGUI priceTag;
-    [SerializeField] private GameObject descriptions;
+    [SerializeField] private GameObject metadataGameObject;
+    [SerializeField] private TextMeshProUGUI metadata;
     [SerializeField] private GameObject buyButton;
     [SerializeField] private GameObject checkMark;
 
-    private bool _hasItem;
     private ShopItemData _itemData;
-    private AssetBundle _bundle;
 
-    public void Load(ShopItemData data, AssetBundle bundle, bool hasItem)
+    public void Load(ShopItemData data, bool hasItem)
     {
         _itemData = data;
-        _bundle = bundle;
-        _hasItem = hasItem;
 
-        StartCoroutine(LoadingIcon(data.iconName));
+        Addressables.LoadAssetAsync<Sprite>(_itemData.thumbnailAddress).Completed += OnThumbnailLoaded;
 
         itemName.text = _itemData.name;
-        priceTag.text = _itemData.price.ToString();
+        priceTag.text = string.Format("{0:C}", _itemData.price);
+        foreach (var row in _itemData.metadata)
+        {
+            metadata.text += $"{row.Key} : {row.Value}\n";
+        }
+
         if (hasItem)
             SetAsOwned();
     }
 
-    private IEnumerator LoadingIcon(string name)
+    private void OnThumbnailLoaded(AsyncOperationHandle<Sprite> obj)
     {
-        AssetBundleRequest assetRequest = _bundle.LoadAssetAsync<Sprite>(name);
-        yield return assetRequest;
+        switch (obj.Status)
+        {
+            case AsyncOperationStatus.Succeeded:
+                thumbnail.sprite = obj.Result;
+                break;
 
-        thumbnail.sprite = assetRequest.asset as Sprite;
+            case AsyncOperationStatus.Failed:
+                Debug.LogWarning($"Could not load the thumbnail for {_itemData.name}");
+                break;
+
+            default:
+                break;
+        }
     }
 
     public void Buy()
@@ -45,17 +57,18 @@ public class ShopItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (inventory.PurchaseItem(_itemData))
         {
             SetAsOwned();
+            Addressables.InstantiateAsync(_itemData.prefabAddress, transform.position, Quaternion.identity);
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        descriptions.SetActive(true);
+        metadataGameObject.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        descriptions.SetActive(false);
+        metadataGameObject.SetActive(false);
     }
 
     private void SetAsOwned()

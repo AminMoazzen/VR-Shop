@@ -1,32 +1,43 @@
-using UnityEngine;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class ShopItemData
 {
     public int id;
     public string name;
-    public string assetName;
-    public string iconName;
-    public string description;
+    public string prefabAddress;
+    public string thumbnailAddress;
+    public string category;
     public int price;
+    public Dictionary<string, string> metadata;
 
-    public ShopItemData(int id, string name, string assetName, string iconName, string description, int price)
+    [JsonConstructor]
+    public ShopItemData(int id, string name, string prefabAddress, string thumbnailAddress, string category, int price, Dictionary<string, string> metadata)
     {
         this.id = id;
         this.name = name;
-        this.assetName = assetName;
-        this.iconName = iconName;
-        this.description = description;
+        this.prefabAddress = prefabAddress;
+        this.thumbnailAddress = thumbnailAddress;
+        this.category = category;
         this.price = price;
+        this.metadata = metadata;
     }
 
     public ShopItemData(string json)
     {
-        JsonUtility.FromJson<ShopItem>(json);
+        var data = JsonConvert.DeserializeObject<ShopItemData>(json);
+        id = data.id;
+        name = data.name;
+        prefabAddress = data.prefabAddress;
+        thumbnailAddress = data.thumbnailAddress;
+        category = data.category;
+        price = data.price;
+        metadata = data.metadata;
     }
 
     public string Serialize()
     {
-        return JsonUtility.ToJson(this);
+        return JsonConvert.SerializeObject(this);
     }
 }
