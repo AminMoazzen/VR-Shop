@@ -17,12 +17,36 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: d49df40bc0af7554880465a26f28201e
   m_SerializeEntries:
-  - m_GUID: a27c43cb0ca50ac479843807dd98b9e6
-    m_Address: Assets/Sprites/New Sprite Atlas.spriteatlas
+  - m_GUID: 1bf300c307d069b4091e09f27e1e6184
+    m_Address: Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 1bc3fde8725a45c41b344ac33d3eece4
-    m_Address: Assets/Prefabs/Object-AnchorAtHand.prefab
+    m_Address: Assets/Addressable Assets/Prefabs/Tetrahedron.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ca090841e3e751428ce2d71e247a3d0
+    m_Address: Assets/Addressable Assets/Prefabs/Octahedron.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6d8e2f194f2097742b03249ac50ffa02
+    m_Address: Assets/Addressable Assets/Prefabs/Trapezohedron.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8172e5044947209459ef25fed06a2aa7
+    m_Address: Assets/Addressable Assets/Prefabs/Dodecahedron.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df665aeecdf746c43b78a768ae584ab8
+    m_Address: Assets/Addressable Assets/Prefabs/Couch.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d7f774873c739d4885ebc7dd49ac1a7
+    m_Address: Assets/Addressable Assets/Prefabs/Table.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e7a9a88e474682142870714f86acbaaf
+    m_Address: Assets/Addressable Assets/Prefabs/Plant.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

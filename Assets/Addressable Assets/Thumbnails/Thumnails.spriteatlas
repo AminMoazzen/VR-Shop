@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Thumnails
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: af9606ac2e6278d4db3ffae7aef3732c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 47468715c36764a4fb6a19543cf959ab, type: 3}
+  - {fileID: 21300000, guid: b8abba96e36870c4b8c35af4eb803f96, type: 3}
+  - {fileID: 21300000, guid: 5a4aebb77672dcf4b80d98b72e0361ab, type: 3}
+  - {fileID: 21300000, guid: 8105bd582d6b34844bbc005f04d843a9, type: 3}
+  - {fileID: 21300000, guid: 9a862eda201beb04f92034a3150c7c12, type: 3}
+  - {fileID: 21300000, guid: d8c11a2b1cd099b4c896ee47593ff4f1, type: 3}
+  - {fileID: 21300000, guid: 017c6bbf6b250f648a5678820bf8c37e, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - plant
+  - tetrahedron
+  - trapezohedron
+  - table
+  - octahedron
+  - couch
+  - dodecahedron
+  m_RenderDataMap: {}
+  m_Tag: Thumnails
+  m_IsVariant: 0

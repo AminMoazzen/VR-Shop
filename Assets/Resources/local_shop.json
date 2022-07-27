@@ -3,26 +3,86 @@
   "items": [
     {
       "id": 0,
-      "name": "Emerald",
-      "prefabAddress": "Assets/Prefabs/Object-AnchorAtHand.prefab",
-      "thumbnailAddress": "Assets/Sprites/New Sprite Atlas.spriteatlas[BundledSpriteObject]",
+      "name": "Tetrahedron",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Tetrahedron.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[tetrahedron]",
       "category": "Jewelry",
-      "price": 1000,
+      "price": 3000,
       "metadata": {
-        "Weight": "1.3g",
-        "Color": "green"
+        "Weight": "1.34g",
+        "Color": "emerald"
       }
     },
-	{
+    {
       "id": 1,
-      "name": "Chair",
-      "prefabAddress": "Assets/Prefabs/Object-AnchorAtHand.prefab",
-      "thumbnailAddress": "Assets/Sprites/New Sprite Atlas.spriteatlas[BundledSpriteObject]",
+      "name": "Octahedron",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Octahedron.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[octahedron]",
+      "category": "Jewelry",
+      "price": 3700,
+      "metadata": {
+        "Weight": "2.1g",
+        "Color": "cobalt"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Trapezohedron",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Trapezohedron.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[trapezohedron]",
+      "category": "Jewelry",
+      "price": 1200,
+      "metadata": {
+        "Weight": "0.94g",
+        "Color": "violet"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Couch",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Couch.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[couch]",
       "category": "Furniture",
-      "price": 2000,
+      "price": 1200,
       "metadata": {
         "Material": "wood",
-        "Color": "brown"
+        "Color": "brown",
+        "Features": "2 cushions"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dodecahedron",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Dodecahedron.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[dodecahedron]",
+      "category": "Jewelry",
+      "price": 2100,
+      "metadata": {
+        "Weight": "1.52g",
+        "Color": "gold"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Coffe Table",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Table.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[table]",
+      "category": "Furniture",
+      "price": 700,
+      "metadata": {
+        "Material": "wood",
+        "Style": "modern"
+      }
+    },
+    {
+      "id": 6,
+      "name": "House Plant",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Plant.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[plant]",
+      "category": "Plant",
+      "price": 75,
+      "metadata": {
+        "Pot Material": "clay",
       }
     }
   ]
