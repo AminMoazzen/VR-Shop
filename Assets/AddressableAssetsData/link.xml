@@ -1,0 +1,66 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="InventoryItem" preserve="all" />
+    <type fullname="Nouranium.MessageInventoryItemData" preserve="all" />
+  </assembly>
+  <assembly fullname="nouranium.messaging, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Nouranium.MessageInt" preserve="all" />
+  </assembly>
+  <assembly fullname="Oculus.Interaction, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Oculus.Interaction.DistanceGrabInteractable" preserve="all" />
+    <type fullname="Oculus.Interaction.DistanceReticles.ReticleDataIcon" preserve="all" />
+    <type fullname="Oculus.Interaction.Grabbable" preserve="all" />
+    <type fullname="Oculus.Interaction.HandGrab.DistanceHandGrabInteractable" preserve="all" />
+    <type fullname="Oculus.Interaction.HandGrab.HandGrabInteractable" preserve="all" />
+    <type fullname="Oculus.Interaction.HandGrab.MoveFromTargetProvider" preserve="all" />
+    <type fullname="Oculus.Interaction.MaterialPropertyBlockEditor" preserve="all" />
+    <type fullname="Oculus.Interaction.PointableUnityEventWrapper" preserve="all" />
+    <type fullname="Oculus.Interaction.SnapInteractor" preserve="all" />
+    <type fullname="Oculus.Interaction.GrabAPI.GrabbingRule" preserve="nothing" serialized="true" />
+    <type fullname="Oculus.Interaction.HandGrab.PoseMeasureParameters" preserve="nothing" serialized="true" />
+    <type fullname="Oculus.Interaction.MaterialPropertyColor" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Shopping, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="InventoryLocal" preserve="all" />
+    <type fullname="ShopLocal" preserve="all" />
+    <type fullname="InventoryData" preserve="nothing" serialized="true" />
+    <type fullname="InventoryItemData" preserve="nothing" serialized="true" />
+    <type fullname="ShopData" preserve="nothing" serialized="true" />
+    <type fullname="ShopItemData" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[InventoryItemData]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[System.Int32]" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody" preserve="all" />
+  </assembly>
+</linker>
