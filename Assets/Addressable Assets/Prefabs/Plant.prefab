@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4623595730183410314}
   - component: {fileID: 8980657480145299706}
   - component: {fileID: 1464795395966249837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 582640795008879449}
   - component: {fileID: 3096286365624714502}
   - component: {fileID: 881084634774828949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HandGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 8591532483421727777}
   - component: {fileID: 5659913241891541036}
   - component: {fileID: 1109526343648920701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ControllerGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8645252350902707495}
   - component: {fileID: 2524915061568458263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RectileIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 6881531306883909537}
   - component: {fileID: 8364372611586994440}
   - component: {fileID: 6880254592701302000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291130925934983014}
   - component: {fileID: 341908394029448745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RectileIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 8980657480145299706}
   - component: {fileID: 710421345586463643}
   - component: {fileID: 8629837718809155240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 582640795008879449}
   - component: {fileID: 3096286365624714502}
   - component: {fileID: 2086257130483360808}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HandGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 4158882225849738035}
   - component: {fileID: 2337837833788437751}
   - component: {fileID: 1932892076107913032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ControllerGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 6881531306883909537}
   - component: {fileID: 8364372611586994440}
   - component: {fileID: 1539152549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}

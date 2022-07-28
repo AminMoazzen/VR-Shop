@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5925438191168681106}
   - component: {fileID: 3793151391466949433}
   - component: {fileID: 8830927290622130866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ControllerGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4623595730183410314}
   - component: {fileID: 3194011259967335544}
   - component: {fileID: 8980657480145299706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 3096286365624714502}
   - component: {fileID: 5112134329062311953}
   - component: {fileID: 8771288662221993875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HandGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5334400972431931770}
   - component: {fileID: 392450792057218873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RectileIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 6881531306883909537}
   - component: {fileID: 8364372611586994440}
   - component: {fileID: 2761455959620426601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dodecahedron
   m_TagString: Untagged
   m_Icon: {fileID: 0}

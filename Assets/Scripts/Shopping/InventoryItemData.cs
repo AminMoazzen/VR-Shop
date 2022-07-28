@@ -12,7 +12,7 @@ public class InventoryItemData
     public InventoryItemData(int id)
     {
         this.id = id;
-        this.position = Vector3.zero;
+        this.position = Vector3.one;
         this.rotation = Quaternion.identity;
     }
 

@@ -3,6 +3,19 @@
   "items": [
     {
       "id": 0,
+      "name": "Couch",
+      "prefabAddress": "Assets/Addressable Assets/Prefabs/Couch.prefab",
+      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[couch]",
+      "category": "Furniture",
+      "price": 1200,
+      "metadata": {
+        "Material": "wood",
+        "Color": "brown",
+        "Features": "2 cushions"
+      }
+    },
+    {
+      "id": 1,
       "name": "Tetrahedron",
       "prefabAddress": "Assets/Addressable Assets/Prefabs/Tetrahedron.prefab",
       "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[tetrahedron]",
@@ -14,7 +27,7 @@
       }
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Octahedron",
       "prefabAddress": "Assets/Addressable Assets/Prefabs/Octahedron.prefab",
       "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[octahedron]",
@@ -26,7 +39,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Trapezohedron",
       "prefabAddress": "Assets/Addressable Assets/Prefabs/Trapezohedron.prefab",
       "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[trapezohedron]",
@@ -35,19 +48,6 @@
       "metadata": {
         "Weight": "0.94g",
         "Color": "violet"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Couch",
-      "prefabAddress": "Assets/Addressable Assets/Prefabs/Couch.prefab",
-      "thumbnailAddress": "Assets/Addressable Assets/Thumbnails/Thumnails.spriteatlas[couch]",
-      "category": "Furniture",
-      "price": 1200,
-      "metadata": {
-        "Material": "wood",
-        "Color": "brown",
-        "Features": "2 cushions"
       }
     },
     {
@@ -82,7 +82,7 @@
       "category": "Plant",
       "price": 75,
       "metadata": {
-        "Pot Material": "clay",
+        "Pot Material": "clay"
       }
     }
   ]

@@ -7,7 +7,7 @@ public class Storefront : MonoBehaviour
 {
     [SerializeField] private Shop shop;
     [SerializeField] private Inventory inventory;
-    [SerializeField] private ShopItem shopItemCard;
+    [SerializeField] private ShopItemCard shopItemCard;
     [SerializeField] private Transform grid;
     [SerializeField] private StorefrontCategoryTab categoryTab;
     [SerializeField] private Transform categoryTabBar;
@@ -17,7 +17,7 @@ public class Storefront : MonoBehaviour
     [SerializeField] private Message[] loadOn;
 
     private Dictionary<string, List<ShopItemData>> _itemsByCategory;
-    private List<ShopItem> _itemCards;
+    private List<ShopItemCard> _itemCards;
     private StorefrontCategoryTab _activeCategory;
 
     private void Awake()
@@ -86,7 +86,7 @@ public class Storefront : MonoBehaviour
         _activeCategory = category;
 
         if (_itemCards == null)
-            _itemCards = new List<ShopItem>(_itemsByCategory[category.Name].Count);
+            _itemCards = new List<ShopItemCard>(_itemsByCategory[category.Name].Count);
 
         DestroyCurrentItems();
 
@@ -94,7 +94,7 @@ public class Storefront : MonoBehaviour
 
         for (int i = 0; i < thisCategoryItems.Count; i++)
         {
-            ShopItem item = Instantiate(shopItemCard, grid);
+            ShopItemCard item = Instantiate(shopItemCard, grid);
             item.Load(thisCategoryItems[i], inventory.HasItem(thisCategoryItems[i]));
             _itemCards.Add(item);
         }

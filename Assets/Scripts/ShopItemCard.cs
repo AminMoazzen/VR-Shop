@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
-public class ShopItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ShopItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Inventory inventory;
     [SerializeField] private Image thumbnail;

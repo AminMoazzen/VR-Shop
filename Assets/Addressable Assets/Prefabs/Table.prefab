@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8994893809739496059}
   - component: {fileID: 8937139978610447340}
   - component: {fileID: 8920576840970555007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ControllerGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4623595730183410314}
   - component: {fileID: 8980657480145299706}
   - component: {fileID: 710421345586463643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 582640795008879449}
   - component: {fileID: 3096286365624714502}
   - component: {fileID: 7364260253133916230}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HandGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7363477589662195757}
   - component: {fileID: 4245681755770124045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RectileIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 6881531306883909537}
   - component: {fileID: 8364372611586994440}
   - component: {fileID: 1771221572264057843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
