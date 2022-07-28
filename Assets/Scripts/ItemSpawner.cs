@@ -7,16 +7,16 @@ public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] private Shop shop;
     [SerializeField] private Inventory inventory;
-    [SerializeField] private MessageInventoryItemData[] spawnOn;
+    [SerializeField] private MessageInventoryItemData[] spawnNewItemOn;
     [SerializeField] private Message[] loadOwnedItemsOn;
 
     private InventoryItemData _itemData;
 
     private void Awake()
     {
-        foreach (var msg in spawnOn)
+        foreach (var msg in spawnNewItemOn)
         {
-            msg.StartListening(Spawn);
+            msg.StartListening(SpawnNewItem);
         }
 
         foreach (var msg in loadOwnedItemsOn)
@@ -29,15 +29,27 @@ public class ItemSpawner : MonoBehaviour
     {
         foreach (var item in inventory.data.items)
         {
-            Spawn(item);
+            Spawn(item, false);
         }
     }
 
-    public void Spawn(InventoryItemData itemData)
+    private void Spawn(InventoryItemData itemData, bool isNew)
     {
         _itemData = itemData;
         ShopItemData shopItem = shop.FindItem(_itemData.id);
+        Vector3 position = itemData.position;
+        Quaternion rotation = itemData.rotation;
+        if (isNew)
+        {
+            position = transform.position;
+            rotation = Quaternion.identity;
+        }
         Addressables.InstantiateAsync(shopItem.prefabAddress, itemData.position, itemData.rotation).Completed += OnInstantiatedPrefab;
+    }
+
+    public void SpawnNewItem(InventoryItemData itemData)
+    {
+        Spawn(itemData, true);
     }
 
     private void OnInstantiatedPrefab(AsyncOperationHandle<GameObject> obj)

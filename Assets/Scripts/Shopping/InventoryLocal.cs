@@ -70,8 +70,11 @@ public class InventoryLocal : Inventory
     public override void UpdateItem(InventoryItemData itemData)
     {
         var item = data.items.Find((x) => x.id == itemData.id);
-        item.position = itemData.position;
-        item.rotation = itemData.rotation;
-        SaveToFile();
+        if (item != null)
+        {
+            item.position = itemData.position;
+            item.rotation = itemData.rotation;
+            SaveToFile();
+        }
     }
 }
