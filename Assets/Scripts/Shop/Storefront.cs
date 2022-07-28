@@ -1,5 +1,4 @@
 using Nouranium;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -15,6 +14,7 @@ public class Storefront : MonoBehaviour
     [SerializeField] private TextMeshProUGUI wallet;
     [SerializeField] private MessageCategoryTab[] selectCategoryOn;
     [SerializeField] private MessageInt[] updateWalletOn;
+    [SerializeField] private Message[] loadOn;
 
     private Dictionary<string, List<ShopItemData>> _itemsByCategory;
     private List<ShopItem> _itemCards;
@@ -31,18 +31,15 @@ public class Storefront : MonoBehaviour
         {
             msg.StartListening(UpdateWalletText);
         }
+
+        foreach (var msg in loadOn)
+        {
+            msg.StartListening(Load);
+        }
     }
 
-    private void Start()
+    public void Load()
     {
-        StartCoroutine(Load());
-    }
-
-    private IEnumerator Load()
-    {
-        yield return inventory.Fetch();
-        yield return shop.Fetch();
-
         UpdateWalletText(inventory.data.Wallet);
 
         var items = shop.data.items;

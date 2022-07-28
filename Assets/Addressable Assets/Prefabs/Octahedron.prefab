@@ -611,7 +611,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 6265129835399567061}
   _snapPoint: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
-  _timeOut: 2
+  _timeOut: 0
 --- !u!1 &6049968147448209814
 GameObject:
   m_ObjectHideFlags: 0

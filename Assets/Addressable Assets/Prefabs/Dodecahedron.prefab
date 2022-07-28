@@ -761,7 +761,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 7007765749953072550}
   _snapPoint: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
-  _timeOut: 2
+  _timeOut: 0
 --- !u!1001 &1625477667381960944
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -57,7 +57,6 @@ public class ShopItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (inventory.PurchaseItem(_itemData))
         {
             SetAsOwned();
-            Addressables.InstantiateAsync(_itemData.prefabAddress, transform.position, Quaternion.identity);
         }
     }
 

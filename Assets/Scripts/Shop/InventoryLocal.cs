@@ -40,10 +40,12 @@ public class InventoryLocal : Inventory
             return false;
 
         data.Wallet -= item.price;
-        data.items.Add(item);
+        InventoryItemData invItem = new InventoryItemData(item.id);
+        data.items.Add(invItem);
         SaveToFile();
 
         onWalletChanged.Invoke(data.Wallet);
+        onItemBought.Invoke(invItem);
 
         return true;
     }
@@ -63,5 +65,13 @@ public class InventoryLocal : Inventory
     private string GetSavePath()
     {
         return Application.persistentDataPath + "/inventory.json";
+    }
+
+    public override void UpdateItem(InventoryItemData itemData)
+    {
+        var item = data.items.Find((x) => x.id == itemData.id);
+        item.position = itemData.position;
+        item.rotation = itemData.rotation;
+        SaveToFile();
     }
 }

@@ -927,3 +927,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 45eb72d60298fc54b98655034a88a597, type: 2}
   updateWalletOn:
   - {fileID: 11400000, guid: ede4f9c3db54cb541888789f6a5f0a9c, type: 2}
+  loadOn:
+  - {fileID: 11400000, guid: 7fae3e337aa3b544d867f4bb8a318bff, type: 2}

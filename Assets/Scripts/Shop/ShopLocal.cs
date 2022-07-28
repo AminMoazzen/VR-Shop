@@ -16,4 +16,9 @@ public class ShopLocal : Shop
 
         data = new ShopData(jsonContent);
     }
+
+    public override ShopItemData FindItem(int id)
+    {
+        return data.items.Find((x) => x.id == id);
+    }
 }

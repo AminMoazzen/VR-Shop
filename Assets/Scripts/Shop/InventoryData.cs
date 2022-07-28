@@ -1,26 +1,27 @@
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using UnityEngine;
 
 [System.Serializable]
 public class InventoryData
 {
     public int Wallet;
-    public List<ShopItemData> items;
+    public List<InventoryItemData> items;
 
     public InventoryData()
     {
         Wallet = 0;
-        items = new List<ShopItemData>();
+        items = new List<InventoryItemData>();
     }
 
     public InventoryData(string json)
     {
-        var data = JsonUtility.FromJson<InventoryData>(json);
+        var data = JsonConvert.DeserializeObject<InventoryData>(json);
         Wallet = data.Wallet;
         items = data.items;
     }
 
-    public InventoryData(int Wallet, List<ShopItemData> items)
+    [JsonConstructor]
+    public InventoryData(int Wallet, List<InventoryItemData> items)
     {
         this.Wallet = Wallet;
         this.items = items;
@@ -28,6 +29,6 @@ public class InventoryData
 
     public string Serialize()
     {
-        return JsonUtility.ToJson(this);
+        return JsonConvert.SerializeObject(this);
     }
 }
